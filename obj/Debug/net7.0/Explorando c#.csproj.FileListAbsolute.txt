@@ -1,0 +1,15 @@
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\bin\Debug\net7.0\Explorando c#.exe
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\bin\Debug\net7.0\Explorando c#.deps.json
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\bin\Debug\net7.0\Explorando c#.runtimeconfig.json
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\bin\Debug\net7.0\Explorando c#.dll
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\bin\Debug\net7.0\Explorando c#.pdb
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.csproj.AssemblyReference.cache
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.AssemblyInfoInputs.cache
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.AssemblyInfo.cs
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.dll
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\refint\Explorando c#.dll
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.pdb
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\Explorando c#.genruntimeconfig.cache
+C:\Users\Miguel\Documents\Boostacamp Microsoft 365\Explorando c#\obj\Debug\net7.0\ref\Explorando c#.dll
