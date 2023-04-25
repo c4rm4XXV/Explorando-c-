@@ -24,9 +24,10 @@ namespace Explorando_c_.Models
         public void ListaAlunos ()
         {
             Console.WriteLine($"Alunos do curso {Nome}:");
-            foreach (Pessoa aluno in Alunos)
+            for(int i = 0; i < Alunos.Count; i++)
             {
-                Console.WriteLine($"{aluno.NomeCompleto}");
+                //string texto = "Aluno N" + (i+1) + "º: " + Alunos[i].NomeCompleto;
+                Console.WriteLine($"Aluno N{i+1}º: {Alunos[i].NomeCompleto}");
             }
         }
     }
