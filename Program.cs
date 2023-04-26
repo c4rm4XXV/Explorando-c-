@@ -56,6 +56,7 @@ cursoIngles.AdcionarAlunos(p2);
 cursoIngles.ListaAlunos();
 */
 
+/*
 
 //Leiturar de arquivos 
 //para contornar algum erro usamos o try para testar casa algum erro, para não finalizar o codigo o trecho catch é executado e o algoritimo 
@@ -86,6 +87,47 @@ finally
 
 new ExemploExcecao().Metodo1();
 
+*/
+//FILA
+//criando uma fila
 
+Queue<int> fila = new Queue<int>();
 
+fila.Enqueue(2);
+fila.Enqueue(4);
+fila.Enqueue(8);
+
+foreach(int item in fila)
+{
+    //Console.WriteLine(item);
+}
+//Não passa nem um parametro pois em fila sempre sai o primeiro elemento
+Console.WriteLine($"Removendo elemento {fila.Dequeue()}");
+
+foreach(int item in fila)
+{
+    //Console.WriteLine(item);
+}
+
+fila.Enqueue(16);
+
+foreach(int item in fila)
+{
+    //Console.WriteLine(item);
+}
+
+//Pilhas
+Console.WriteLine("Pilha");
+Stack<int> pilha = new Stack<int>();
+
+pilha.Push(2);
+pilha.Push(4);
+pilha.Push(8);
+
+foreach(int item in pilha)
+{
+    Console.WriteLine(item);
+}
+
+Console.WriteLine("Removendo Elementod do topo: "+ pilha.Pop());
 
