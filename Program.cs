@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando_c_.Models;
+/*
 //para alterar a configuração da cultura do sistema
 using System.Globalization;
 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");//altera de maneira geral no sistema
@@ -25,7 +26,7 @@ DateTime data = DateTime.Now;
 Console.WriteLine(data.ToString("dd/MM/yy HH:mm"));
 
 Console.WriteLine("Digite uma data");
-string dataDigitada = Console.ReadLine();
+string dataDigitada = "03-10-2000";
 //Validando e convertendo para uma data validada
 if(DateTime.TryParseExact(dataDigitada,"dd-MM-yy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime date))
 {
@@ -53,7 +54,37 @@ cursoIngles.Alunos = new List<Pessoa>();
 cursoIngles.AdcionarAlunos(p1);
 cursoIngles.AdcionarAlunos(p2);
 cursoIngles.ListaAlunos();
+*/
 
+
+//Leiturar de arquivos 
+//para contornar algum erro usamos o try para testar casa algum erro, para não finalizar o codigo o trecho catch é executado e o algoritimo 
+//continua rodando
+//podemos também prever alguma exceções mais expecificas e tratar cada uma de maneira expecifica com varios catch seguidos 
+try
+{
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+    foreach(String linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+} catch(FileNotFoundException ex)
+{
+    Console.WriteLine($"Arquivo não localizado. {ex.Message}");
+} catch(DirectoryNotFoundException ex)
+{
+    Console.WriteLine($"Diretorio não localizado. {ex.Message}");
+} catch(Exception ex)
+{
+    Console.WriteLine($" Exceção generica. {ex.Message}");
+}//temos o bloco finally onde é executado independente se ocorreu um erro ou não diferente dos blocas catch que execeutam quando ocorre uma erro
+finally
+{
+    Console.WriteLine("Chegou até aqui");
+}
+
+new ExemploExcecao().Metodo1();
 
 
 
