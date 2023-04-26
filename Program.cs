@@ -88,6 +88,7 @@ finally
 new ExemploExcecao().Metodo1();
 
 */
+/*
 //FILA
 //criando uma fila
 
@@ -131,3 +132,48 @@ foreach(int item in pilha)
 
 Console.WriteLine("Removendo Elementod do topo: "+ pilha.Pop());
 
+*/
+
+//Coleção Dictionary
+//para a coleção dictionary precisada de dois tipos de valores uma chave e um item
+//Chaves são valores unicos que não podem ser repetidos na coleção grantindo que os elementos sejam unicos
+//já o item podem ser qualquer informação 
+Dictionary<string,string> estados = new Dictionary<string,string>();
+//adicinando elementos
+estados.Add("MA","Maranhão");
+estados.Add("PI","Píaui");
+estados.Add("PR","Paraná");
+
+foreach(KeyValuePair<string,string> item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+//para remover um item precisamos apenas da chave
+estados.Remove("PR");
+
+foreach(KeyValuePair<string,string> item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+//para alterar um dado precisamos apenas da chaves, onde apenas o item é alterado a chave é inalteravel 
+estados["MA"] = "Maranhão - alterado";
+
+foreach(KeyValuePair<string,string> item in estados)
+{
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+//validando chaves
+string chave = "MA";
+
+if(estados.ContainsKey(chave))
+{
+    Console.WriteLine("Chave já cadastrada");
+}
+else
+{
+    Console.WriteLine("Chave não cadaastrada");
+}
+
+//para conseguimos um valor de um determinada chave pasando apenas a chave do valor 
+Console.WriteLine(estados["MA"]);
